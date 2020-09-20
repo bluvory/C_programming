@@ -13,13 +13,13 @@ int main(void) {
 	masked_data = data & mask;
 	printf("byte 0 : %x", masked_data);
 
-	masked_data = (data<<2) & mask;
+	masked_data = (data>>8) & mask;
 	printf("\nbyte 1 : %x", masked_data);
 
-	masked_data = data & (mask<<5);
+	masked_data = (data>>16) & mask;
 	printf("\nbyte 2 : %x", masked_data);
 
-	masked_data = data & 0xff;
+	masked_data = (data>>24) & mask;
 	printf("\nbyte 3 : %x", masked_data);
 
 }
