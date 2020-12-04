@@ -1,17 +1,13 @@
-// 8장 연습문제12
-
 # include <stdio.h>
 # pragma warning (disable:4996)
 
 int research_array(int* arr, int size, int key) {
 
 	int cnt = 0;
-	int k = 0;
 	for (int i = 0; i < size; i++) {
 		if (arr[i] == key) {
+			arr[cnt] = i;
 			cnt++;
-			arr[k] = i;
-			k++;
 		}
 	}
 	return cnt;
@@ -32,4 +28,5 @@ int main(void) {
 	printf("찾은 항목의 인덱스: ");
 	for (int i = 0; i < res; i++)
 		printf("%d ", arr[i]);
+
 }

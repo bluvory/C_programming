@@ -1,5 +1,3 @@
-// 8장 연습문제4
-
 # include <stdio.h>
 # pragma warning (disable:4996)
 
