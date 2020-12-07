@@ -3,8 +3,8 @@
 
 int main(void) {
 
-	char str[10];
-	char code[10];
+	char str[20];
+	char code[20];
 	int key;
 
 	printf("문자열? ");
@@ -13,7 +13,7 @@ int main(void) {
 	printf("암호 키(정수)? ");
 	scanf("%d", &key);
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 20; i++) {
 		if (str[i] == '\0')
 			code[i] = '\0';
 		else if (str[i] + key > 122)
